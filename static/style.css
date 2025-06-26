@@ -1,0 +1,157 @@
+body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem 1.5rem;
+      box-sizing: border-box;
+    }
+    pre {
+      background: #161b22;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+    code {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.95rem;
+    }
+    h1, h2, h3 {
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+    blockquote {
+      border-left: 4px solid #58a6ff;
+      padding-left: 1rem;
+      color: #8b949e;
+    }
+    a {
+      color: #58a6ff;
+    }
+
+.toc-tree {
+  background-color: #161b22;
+  color: #c9d1d9;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  max-width: 300px;
+  overflow-y: auto;
+  border: 1px solid #30363d;
+}
+
+.toc-tree ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.toc-tree li {
+  margin: 0.5rem 0;
+  line-height: 1.4;
+  position: relative;
+}
+
+.toc-tree a {
+  color: #58a6ff;
+  text-decoration: none;
+  padding-left: 0.4rem;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.toc-tree a:hover {
+  text-decoration: underline;
+}
+
+.toc-tree .arrow {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 0.3rem;
+  font-size: 0.8rem;
+  transition: transform 0.2s ease;
+  color: #8b949e;
+  user-select: none;
+}
+
+.toc-tree .nested {
+  display: none;
+  margin-left: 1rem;
+  border-left: 1px dashed #30363d;
+  padding-left: 0.5rem;
+}
+
+.toc-tree .nested.open {
+  display: block;
+}
+
+.level-1 > a {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.level-2 > a {
+  font-size: 0.9rem;
+}
+
+.level-3 > a {
+  font-size: 0.85rem;
+  color: #8b949e;
+}
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .search-input {
+      flex: 1 1 250px;
+      min-width: 150px;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #30363d;
+      background-color: #161b22;
+      color: #c9d1d9;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9rem;
+      }
+      h1, h2, h3 {
+        font-size: 1.2rem;
+      }
+      main {
+        padding: 1rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .search-input {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+    footer ul a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
